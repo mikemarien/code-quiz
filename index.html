@@ -12,25 +12,23 @@
     <title>Web APIs: Code Quiz</title>
 </head>
 <body>
-    <div class="code-quiz">
-        <div id="questions">
-          <h1 class="question-banner" id="banner"></h1>
-          <div id="question">Question</div>
-          <div class="answer-btns">
-            <button class="btn">answer-btn-1</button>
-            <button class="btn">answer-btn-2</button>
-            <button class="btn">answer-btn-3</button>
-            <button class="btn">answer-btn-4</button>
-          </div>
-        </div>
-        <div class="confirm-next">
-          <button class="btn" id="action_btn">Submit Answer</button>
-          <button class="btn hide" id="next_btn">Next Question</button>
-        </div>
-      </div>        
-      <div class="score">
-        Your score: <span id="score"></span>
-      </div>		
+  <div class="code-quiz">
+    <div id="questionBox" class="hide">
+      <div id="question">Question</div>
+      <div id="answerButtons" class="buttonBox">
+        <button class="btn">btn1</button>
+        <button class="btn">btn2</button>
+        <button class="btn">btn3</bbutton>
+        <button class="btn">btn4</button>
+      </div>
+    </div>
+    <div class="hide" id="scores">
+			Your score: <span id="score"></span>
+		</div>
+    <div class="navigationButtons">
+      <button id="startButton" class="startButton">Start Quiz</button>
+      <button id="nextButton" class="nextButton">Next Question</button>
+    </div>
   </div>
 </body>
 </html>

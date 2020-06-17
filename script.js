@@ -1,25 +1,18 @@
+const questionElement = document.getElementById("Question")
+const startButton = document.getElementById("startButton")
+const nextButton = document.getElementById("nextButton")
+const questionBox = document.getElementById("questionBox")
+const answerButtonsElement = document.getElementById("answerButtons")
 
+startButton.addEventListener("click", start)
+nextButton.classList.add("hide")
 
+function start() {
+  startButton.classList.add("hide")
+  nextButton.classList.add("show")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+}
 
 const questions = [
   {

@@ -2,3 +2,44 @@
     font-family: "Athiti";
     box-sizing: border-box;
   }    
+
+body {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.questionBox {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 25px;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  background-color: hsl(var(--hue), 25%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn.correct { 
+  --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 10;
+  --hue-correct: 165;
+}
+
+
+.hide {
+  display: none;
+}
