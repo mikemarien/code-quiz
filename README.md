@@ -1,2 +1,0 @@
-# code-quiz
-code-quiz
