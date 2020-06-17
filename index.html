@@ -6,11 +6,31 @@
     <!--are files in vscode deleted when I commit-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script defer src="script.js"></script>
     <title>Web APIs: Code Quiz</title>
 </head>
 <body>
-
+    <div class="code-quiz">
+        <div id="questions">
+          <h1 class="question-banner" id="banner"></h1>
+          <div id="question">Question</div>
+          <div class="answer-btns">
+            <button class="btn">answer-btn-1</button>
+            <button class="btn">answer-btn-2</button>
+            <button class="btn">answer-btn-3</button>
+            <button class="btn">answer-btn-4</button>
+          </div>
+        </div>
+        <div class="confirm-next">
+          <button class="btn" id="action_btn">Submit Answer</button>
+          <button class="btn hide" id="next_btn">Next Question</button>
+        </div>
+      </div>        
+      <div class="score">
+        Your score: <span id="score"></span>
+      </div>		
+  </div>
 </body>
 </html>
